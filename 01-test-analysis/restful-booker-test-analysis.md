@@ -64,6 +64,34 @@ The testing scope includes:
 | checkout | 2026-07-15 |
 | additionalneeds | Breakfast |
 
+### Update Booking Data
+
+| Field | Example |
+|---|---|
+| firstname | Ron |
+| lastname | Weasley |
+| totalprice | 200 |
+| depositpaid | false |
+| checkin | 2026-08-01 |
+| checkout | 2026-08-05 |
+| additionalneeds | Dinner |
+
+### Partial Update Data
+
+| Field | Example |
+|---|---|
+| firstname | Hermione |
+| additionalneeds | Late checkout |
+
+### Invalid / Bug-Related Data
+
+| Scenario | Example |
+|---|---|
+| Missing required field | `totalprice` is not sent |
+| Invalid data types | `totalprice: "abc"`, `depositpaid: "no"` |
+| Invalid date range | `checkin: 2026-07-21`, `checkout: 2026-07-11` |
+| Checkin filter boundary | booking checkin equals filter checkin |
+
 ## Test Design Approach
 
 ### Positive Scenarios
@@ -71,6 +99,10 @@ The testing scope includes:
 - Create token with valid credentials
 - Create booking with valid body
 - Get booking by valid ID
+- Get all booking IDs
+- Filter booking IDs by firstname and lastname
+- Filter booking IDs by checkin and checkout dates
+- Verify deleted booking is no longer available
 - Update booking with valid token
 - Partially update booking with valid token
 - Delete booking with valid token
@@ -78,12 +110,18 @@ The testing scope includes:
 ### Negative Scenarios
 
 - Create token with invalid credentials
-- Get booking by invalid ID
-- Create booking with missing required fields
-- Update booking without token
-- Update booking with invalid token
-- Delete booking without token
-- Delete booking with invalid booking ID
+- Create token with empty request body
+- Get booking by non-existing ID
+- Filter bookings by non-existing firstname/lastname
+- Create booking without required `totalprice` field
+- Create booking with invalid data types
+- Create booking with checkout date earlier than checkin date
+- Update booking without authorization
+- Update booking with invalid booking ID
+- Partial update booking without authorization
+- Delete booking without authorization
+- Verify that deleted booking is not accessible
+- Verify checkin date filter boundary behavior
 
 ## Risks
 
@@ -94,6 +132,7 @@ The testing scope includes:
 | Missing validation | API may accept incomplete or invalid request bodies |
 | Data inconsistency | Created or updated booking data may not match request body |
 | Delete behavior issue | Deleted booking may still be accessible after DELETE request |
+| Incorrect filtering logic | API may return incorrect booking IDs when filtering by checkin or checkout dates |
 
 ## Acceptance Criteria
 
@@ -103,3 +142,6 @@ The testing scope includes:
 - Updated booking reflects changed data
 - Protected endpoints require valid authentication
 - Invalid requests are handled with appropriate errors
+- Booking filters return relevant booking IDs according to query parameters
+- Deleted booking is not available by ID after successful deletion
+- Invalid or incomplete request bodies are rejected with client-side error status codes
