@@ -1,0 +1,6 @@
+ID,Title,Priority,Type
+C330,Update booking with token,High,Functional
+C331,Update without authorization,High,Security
+C332,Update non-existing ID,Medium,Functional
+C333,Partially update firstname with token,High,Functional
+C334,Partial update without authorization,High,Security
