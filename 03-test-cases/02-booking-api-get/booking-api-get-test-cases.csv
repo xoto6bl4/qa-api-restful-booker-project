@@ -1,0 +1,8 @@
+ID,Title,Priority,Type
+C321,Get all booking IDs,High,Functional
+C322,Filter by firstname and lastname,Medium,Functional
+C323,Filter by checkin / checkout dates,Medium,Functional
+C324,Filter with non-existing name,Low,Functional
+C325,Get booking by valid ID,High,Functional
+C326,Get booking by non-existing ID,Medium,Functional
+C339,Verify booking is returned when checkin filter matches booking checkin date,Medium,Functional
