@@ -1,0 +1,4 @@
+ID,Title,Priority,Type
+C318,Successful auth with valid credentials,High,Functional
+C319,Auth with invalid credentials,Medium,Security
+C320,Auth with empty body,Medium,Security
