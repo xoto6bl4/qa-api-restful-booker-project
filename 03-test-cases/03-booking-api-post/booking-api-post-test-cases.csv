@@ -1,0 +1,5 @@
+ID,Title,Priority,Type
+C327,Create booking with valid data,High,Functional
+C328,Create booking without required totalprice,High,Functional
+C329,Create booking with checkout earlier than checkin,High,Functional
+C338,Create Booking accepts invalid data types,High,Functional
