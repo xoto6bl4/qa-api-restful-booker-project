@@ -4,21 +4,19 @@ This folder contains the Postman collection and environment used for API testing
 
 ## Technologies Used
 
-| Area          | Details                                                                                                                          |
-| ------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| Tool          | Postman                                                                                                                          |
-| CLI Runner    | Newman                                                                                                                           |
-| API Type      | RESTful API                                                                                                                      |
-| Testing Scope | CRUD operations, authentication, filtering, validation                                                                           |
-| Techniques    | Environment Variables, Collection Variables, Data Parameterization, Automated Assertions, Negative Testing, Bug Evidence Testing |
-| Report Format | Newman HTML reports                                                                                                              |
+- **Tool:** Postman
+- **CLI Runner:** Newman
+- **API Type:** RESTful API
+- **Testing Scope:** CRUD, authentication, filtering, validation
+- **Techniques:** Environment variables, collection variables, automated assertions, negative testing
+- **Reports:** Newman HTML reports
 
 ## Files
 
 | File                                                                                                       | Description                                                               |
 | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| [restful-booker-api-tests.postman_collection.json](restful-booker-api-tests.postman_collection.json)       | Postman collection with positive, negative, and bug-related API scenarios |
-| [restful-booker-environment.postman_environment.json](restful-booker-environment.postman_environment.json) | Postman environment with base URL and runtime variables                   |
+| [restful-booker-api-tests.postman_collection.json](01-QA-API-Restful-Booker-Project.postman_collection.json)       | Postman collection with positive, negative, and bug-related API scenarios |
+| [restful-booker-environment.postman_environment.json](02-Restful-Booker-Environment.postman_environment.json) | Postman environment with base URL and runtime variables                   |
 
 ## Collection Structure
 
