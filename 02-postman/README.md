@@ -6,8 +6,8 @@ This folder contains the Postman collection and environment used for API testing
 
 | File | Description |
 |---|---|
-| `restful-booker-api-tests.postman_collection.json` | Postman collection with positive, negative, and bug-related API scenarios |
-| `restful-booker-environment.postman_environment.json` | Postman environment with base URL and runtime variables |
+| [restful-booker-api-tests.postman_collection.json](01-QA-API-restful-booker-project.postman_collection.json) | Postman collection with positive, negative, and bug-related API scenarios |
+| [restful-booker-environment.postman_environment.json](02-restful-booker-environment.postman_environment.json) | Postman environment with base URL and runtime variables |
 
 ## Collection Structure
 
