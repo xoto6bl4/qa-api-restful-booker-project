@@ -1,26 +1,23 @@
-```md
-| ID | Title | Case ID | Defects | Priority | References | Run | Run ID | Section | Status | Type |
-|---|---|---|---|---|---|---|---|---|---|---|
-| T502 | Successful auth with valid credentials | C318 |  | High |  | QA API Restful Booker Project | R20 | Auth API | Passed | Functional |
-| T503 | Auth with invalid credentials | C319 |  | Medium |  | QA API Restful Booker Project | R20 | Auth API | Passed | Security |
-| T504 | Auth with empty body | C320 |  | Medium |  | QA API Restful Booker Project | R20 | Auth API | Passed | Security |
-| T505 | Get all booking IDs | C321 |  | High |  | QA API Restful Booker Project | R20 | Booking API - GET | Passed | Functional |
-| T506 | Filter by firstname and lastname | C322 |  | Medium |  | QA API Restful Booker Project | R20 | Booking API - GET | Passed | Functional |
-| T507 | Filter by checkin / checkout dates | C323 |  | Medium |  | QA API Restful Booker Project | R20 | Booking API - GET | Passed | Functional |
-| T508 | Filter with non-existing name | C324 |  | Low |  | QA API Restful Booker Project | R20 | Booking API - GET | Passed | Functional |
-| T509 | Get booking by valid ID | C325 |  | High |  | QA API Restful Booker Project | R20 | Booking API - GET | Passed | Functional |
-| T510 | Get booking by non-existing ID | C326 |  | Medium |  | QA API Restful Booker Project | R20 | Booking API - GET | Passed | Functional |
-| T523 | Verify booking is returned when checkin filter matches booking checkin date | C339 | [QSD-14](https://xoto6bl41.atlassian.net/browse/QSD-14) | Medium |  | QA API Restful Booker Project | R20 | Booking API - GET | Failed | Functional |
-| T511 | Create booking with valid data | C327 |  | High |  | QA API Restful Booker Project | R20 | Booking API - POST | Passed | Functional |
-| T512 | Create booking without required totalprice | C328 | [QSD-10](https://xoto6bl41.atlassian.net/browse/QSD-10) | High |  | QA API Restful Booker Project | R20 | Booking API - POST | Failed | Functional |
-| T513 | Create booking with checkout earlier than checkin | C329 | [QSD-13](https://xoto6bl41.atlassian.net/browse/QSD-13) | High |  | QA API Restful Booker Project | R20 | Booking API - POST | Failed | Functional |
-| T522 | Create Booking accepts invalid data types | C338 | [QSD-11](https://xoto6bl41.atlassian.net/browse/QSD-11) | High |  | QA API Restful Booker Project | R20 | Booking API - POST | Failed | Functional |
-| T514 | Update booking with token | C330 |  | High |  | QA API Restful Booker Project | R20 | Booking API - PUT/PATCH | Passed | Functional |
-| T515 | Update without authorization | C331 |  | High |  | QA API Restful Booker Project | R20 | Booking API - PUT/PATCH | Passed | Security |
-| T516 | Update non-existing ID | C332 |  | Medium |  | QA API Restful Booker Project | R20 | Booking API - PUT/PATCH | Passed | Functional |
-| T517 | Partially update firstname with token | C333 |  | High |  | QA API Restful Booker Project | R20 | Booking API - PUT/PATCH | Passed | Functional |
-| T518 | Partial update without authorization | C334 |  | High |  | QA API Restful Booker Project | R20 | Booking API - PUT/PATCH | Passed | Security |
-| T519 | Delete existing booking with token | C335 |  | High |  | QA API Restful Booker Project | R20 | Booking API - DELETE | Passed | Functional |
-| T520 | Delete without authorization | C336 |  | High |  | QA API Restful Booker Project | R20 | Booking API - DELETE | Passed | Security |
-| T521 | Verify Deleted Booking | C337 |  | High |  | QA API Restful Booker Project | R20 | Booking API - DELETE | Passed | Functional |
-```
+"ID","Title","Case ID","Defects","Priority","References","Run","Run ID","Section","Status","Type"
+"T502","Successful auth with valid credentials","C318","","High","","QA API Restful Booker Project","R20","Auth API","Passed","Functional"
+"T503","Auth with invalid credentials","C319","","Medium","","QA API Restful Booker Project","R20","Auth API","Passed","Security"
+"T504","Auth with empty body","C320","","Medium","","QA API Restful Booker Project","R20","Auth API","Passed","Security"
+"T505","Get all booking IDs","C321","","High","","QA API Restful Booker Project","R20","Booking API - GET","Passed","Functional"
+"T506","Filter by firstname and lastname","C322","","Medium","","QA API Restful Booker Project","R20","Booking API - GET","Passed","Functional"
+"T507","Filter by checkin / checkout dates","C323","","Medium","","QA API Restful Booker Project","R20","Booking API - GET","Passed","Functional"
+"T508","Filter with non-existing name","C324","","Low","","QA API Restful Booker Project","R20","Booking API - GET","Passed","Functional"
+"T509","Get booking by valid ID","C325","","High","","QA API Restful Booker Project","R20","Booking API - GET","Passed","Functional"
+"T510","Get booking by non-existing ID","C326","","Medium","","QA API Restful Booker Project","R20","Booking API - GET","Passed","Functional"
+"T523","Verify booking is returned when checkin filter matches booking checkin date","C339","https://xoto6bl41.atlassian.net/browse/QSD-14","Medium","","QA API Restful Booker Project","R20","Booking API - GET","Failed","Functional"
+"T511","Create booking with valid data","C327","","High","","QA API Restful Booker Project","R20","Booking API - POST","Passed","Functional"
+"T512","Create booking without required totalprice","C328","https://xoto6bl41.atlassian.net/browse/QSD-10","High","","QA API Restful Booker Project","R20","Booking API - POST","Failed","Functional"
+"T513","Create booking with checkout earlier than checkin","C329","https://xoto6bl41.atlassian.net/browse/QSD-13","High","","QA API Restful Booker Project","R20","Booking API - POST","Failed","Functional"
+"T522","Create Booking accepts invalid data types","C338","https://xoto6bl41.atlassian.net/browse/QSD-11","High","","QA API Restful Booker Project","R20","Booking API - POST","Failed","Functional"
+"T514","Update booking with token","C330","","High","","QA API Restful Booker Project","R20","Booking API - PUT/PATCH","Passed","Functional"
+"T515","Update without authorization","C331","","High","","QA API Restful Booker Project","R20","Booking API - PUT/PATCH","Passed","Security"
+"T516","Update non-existing ID","C332","","Medium","","QA API Restful Booker Project","R20","Booking API - PUT/PATCH","Passed","Functional"
+"T517","Partially update firstname with token","C333","","High","","QA API Restful Booker Project","R20","Booking API - PUT/PATCH","Passed","Functional"
+"T518","Partial update without authorization","C334","","High","","QA API Restful Booker Project","R20","Booking API - PUT/PATCH","Passed","Security"
+"T519","Delete existing booking with token","C335","","High","","QA API Restful Booker Project","R20","Booking API - DELETE","Passed","Functional"
+"T520","Delete without authorization","C336","","High","","QA API Restful Booker Project","R20","Booking API - DELETE","Passed","Security"
+"T521","Verify Deleted Booking","C337","","High","","QA API Restful Booker Project","R20","Booking API - DELETE","Passed","Functional"
