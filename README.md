@@ -197,6 +197,7 @@ A full API test run was executed in TestRail.
 
 ## 👤 Author
 
-**Amal Kamalov**
-Manual QA Junior
-[LinkedIn](https://www.linkedin.com/in/amal-kamalov-9688773a9)
+**Amal Kamalov**  
+Manual QA Junior  
+
+- [LinkedIn](https://www.linkedin.com/in/amal-kamalov-9688773a9)
