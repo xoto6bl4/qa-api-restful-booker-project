@@ -162,7 +162,7 @@ A full API test run was executed in TestRail.
 
 ![TestRail run summary](04-test-runs/screenshots/testrail-run-summary.png)
 
-[Test Run Summary](04-test-runs/test-run-summary.md)
+[Test Run Summary](04-test-runs/test-runs-summary.md)
 [TestRail Run Results CSV](04-test-runs/testrail-test-run/testrail-run-results.csv)
 [TestRail Run Stats CSV](04-test-runs/testrail-test-run/testrail-run-stats.csv)
 
