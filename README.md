@@ -51,6 +51,15 @@ The tested endpoints include:
 * Bug evidence testing
 * Basic response time checks
 
+## 🧩 Test Design Techniques Used
+
+- **Equivalence Partitioning** — valid and invalid input groups for authentication, booking creation, update, filtering, and authorization checks.
+- **Boundary Value Analysis** — checkin date filter boundary validation where the filter value equals the created booking checkin date.
+- **Negative Testing** — invalid credentials, empty body, missing required fields, invalid data types, unauthorized requests, and non-existing booking IDs.
+- **Error Guessing** — checks for likely API validation issues, such as invalid date ranges, incorrect data types, and missing required fields.
+- **State Transition Testing** — booking lifecycle flow: create booking, retrieve by ID, update, partially update, delete, and verify deletion.
+- **CRUD Coverage** — verification of Create, Read, Update, and Delete operations for booking resources.
+
 ## 🧰 Technologies & Tools Used
 
 * **Postman** — API requests, environment variables, collection variables, automated assertions
@@ -189,4 +198,5 @@ A full API test run was executed in TestRail.
 ## 👤 Author
 
 **Amal Kamalov**
-Manual QA Junior www.linkedin.com/in/amal-kamalov-9688773a9
+Manual QA Junior
+[LinkedIn](https://www.linkedin.com/in/amal-kamalov-9688773a9)
