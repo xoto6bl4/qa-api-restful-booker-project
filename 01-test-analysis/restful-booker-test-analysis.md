@@ -36,12 +36,16 @@ The testing scope includes:
 
 ## Out of Scope
 
-- UI testing
-- Database testing
-- Performance/load testing
-- Security penetration testing
-- Automation framework implementation
-- Real payment or external service integrations
+The following areas were not included in the testing scope because they are not relevant or not available for this project setup:
+
+| Area | Reason |
+|---|---|
+| UI testing | Restful Booker is an API testing project. No UI flow was tested in this scope. |
+| Database testing | Direct database access is not available for the public demo API. |
+| Performance/load testing | The project focuses on functional API testing. Load testing requires a separate setup and is outside the current scope. |
+| Security penetration testing | Only basic authorization checks were performed. Full security testing requires a separate security-focused scope. |
+| Automation framework implementation | Tests were automated using Postman assertions and Newman runs, but no separate code-based automation framework was implemented. |
+| Real payment or external service integrations | Restful Booker does not include real payment processing or external service integrations. |
 
 ## Test Data
 
