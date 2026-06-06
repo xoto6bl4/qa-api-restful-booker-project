@@ -78,7 +78,7 @@ The tested endpoints include:
 * **[03-test-cases](03-test-cases/)** — API test cases grouped by endpoint area
 * **[04-test-runs](04-test-runs/)** — Newman reports, TestRail run results, screenshots
 * **[05-bug-reports](05-bug-reports/)** — documented API defects with Jira evidence
-* **[06-checklists](06-checklists/)** — API testing checklist and coverage overview
+* **[06-traceability-matrix](06-traceability-matrix/)** — coverage matrix linking API endpoints, requirements, test cases, Postman requests, TestRail results, and related defects
 
 ## 🧾 Test Artifacts
 
